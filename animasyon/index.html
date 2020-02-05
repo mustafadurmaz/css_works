@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animasyon</title>
+	<style>
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+  #rect {
+  animation-name: rainbow;
+  animation-duration: 10s;   <!-- animasyon süresini belirtir -->
+
+  }
+
+  @keyframes rainbow {
+  0% {
+    background-color: blue;  <!-- animasyon maviyle başlar -->
+  }
+  50% {
+    background-color: green;   <!-- maviden sonra yeşil olur -->
+  }
+   100% {
+    background-color: yellow;  <!-- yeşilden sonra sarı olur -->
+  }
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+	
+<div id="rect"></div>
+
+</body>
+</html>
+
+
