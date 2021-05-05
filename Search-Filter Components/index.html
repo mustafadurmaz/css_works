@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="component-search">
+        <form action="">
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+            </div>
+            <input type="text" placeholder="Start search">
+            
+        </form>
+        <h6>Popular Searches</h6>
+        <ul>
+            <li>
+                <a href="#">Air Transport</a>
+            </li>
+            <li>
+                <a href="#">Aviation</a>
+            </li>
+            <li class="active">
+                <a href="#">Mekaniske Verksted</a>
+            </li>
+            <li>
+                <a href="#">Port Authority</a>
+            </li>
+            <li>
+                <a href="#">Sporvei</a>
+            </li>
+            <li>
+                <a href="#">Bergens Kredibank</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="component-filter-search">
+        <form action="">
+            <div class="input">
+                <div class="search-icon">
+                    <i class="fa fa-search"></i>
+                </div>
+                <input type="text" placeholder="Start search">
+            </div>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" checked name="type">
+                        <span class="text">Projects</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="type">
+                        <span class="text">Images</span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="type">
+                        <span class="text">People</span>
+                    </label>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+    <div class="component-filter">
+        <form action="">
+            <ul>
+                <li>
+                    <div class="key">Country</div>
+                    <div class="value">
+                        <select name="" id="">
+                            <option value="">Norway</option>
+                            <option value="">Turkey</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="key">City</div>
+                    <div class="value">
+                        <input type="text" value="Bergen">
+                    </div>
+                </li>
+                <li class="filter-button">
+                    <a href="#">
+                        Cancel
+                    </a>
+                    <button type="submit">Apply Filters</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

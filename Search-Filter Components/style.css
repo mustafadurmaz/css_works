@@ -1,0 +1,295 @@
+@import "https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, textarea, button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+.clear {
+    clear: both;
+}
+
+
+body{
+    background: #303236;
+    font-family: 'Muli',sans-serif;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+.component-search input::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+.component-search{
+    background: #3D3F43;
+    border-radius: 15px;
+    padding: 40px 45px;
+    width: 377px;
+    margin: 25px;
+}
+
+.component-search input{
+    padding-left: 53px;
+    height: 50px;
+    width: 250px;
+    background: #303236;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+   
+}
+
+.component-search form{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.component-search form .search-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: rgba(255, 255, 255, .5)
+    
+}
+
+.component-search h6{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.component-search ul{
+    margin-top: 13px;
+}
+
+.component-search ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 7px 0;
+}
+
+.component-search ul li a:hover{
+    color:#2CCDEA ;
+    font-weight: bold;
+}
+
+.component-search ul li.active a{
+    color:#2CCDEA ;
+    font-weight: bold;
+}
+
+
+.component-filter-search{
+    background: #3D3F43;
+    border-radius: 5px;
+    width: 656px;
+    margin: 25px;
+    
+}
+
+.component-filter-search form{
+    height: 40px;
+    display: flex;
+    padding: 14px;
+}
+
+.component-filter-search form .input{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.component-filter-search form .input .search-icon{
+    
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: rgba(255, 255, 255, .5)
+}
+
+.component-filter-search form .input input{
+    
+    height: 40px;
+    width: 100%;
+    background: #303236;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+}
+
+.component-filter-search form .input input::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+.component-filter-search form ul{
+    
+    display: flex;
+    margin-left: 15px;
+}
+
+.component-filter-search form ul li label input{
+    display: none;
+}
+
+.component-filter-search form ul li label .text{
+    display: block;
+    height: 40px;
+    padding: 0 25px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 400ms background-color, 400ms color;
+}
+
+.component-filter-search form ul li label input:checked + .text{
+    background-color: #303236;
+    color: #2ccdea;
+}
+
+
+
+.component-filter{
+    background: #3D3F43;
+    border-radius: 15px;
+    padding: 40px 45px;
+    width: 468px;
+    margin: 25px;
+}
+
+.component-filter form ul li{
+    display: flex;
+    align-items: center;
+}
+
+.component-filter form ul li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.component-filter form ul li .key{
+    width: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.component-filter form ul li .value{
+    flex: 1;
+}
+
+.component-filter form ul li .value input,
+.component-filter form ul li .value select{
+    
+    height: 50px;
+    width: 100%;
+    background: #303236;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.component-filter form ul li.filter-button{
+    margin-top: 40px;
+    border-top: 1px solid #303236;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.component-filter form ul li.filter-button button{
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right,#31A5D9,#1E96A0);
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 7px 10px 5px rgba(#2B2D30,.5);
+}
+
+.component-filter form ul li.filter-button a{
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.component-filter form ul li.filter-button a:hover{
+    color: #fff;
+}
+    
+
+
