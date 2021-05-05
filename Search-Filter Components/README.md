@@ -7,6 +7,6 @@ Uygulamayı test etmek için [tıklayın](https://mustafadurmaz.github.io/css_se
 
 ![Uygulama görseli](https://mustafadurmaz.github.io/css_search-filter_components/screen.JPG)
 
-[temporarily disable liquid tag processing](https://shopify.github.io/liquid/tags/raw/){:title="Click to Visit the Raw page at Shopify"}{:target="_blank"}
+[demo](https://example.com){target="_blank"}
 
 
