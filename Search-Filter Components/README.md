@@ -7,6 +7,6 @@ Uygulamayı test etmek için [tıklayın](https://mustafadurmaz.github.io/css_se
 
 ![Uygulama görseli](https://mustafadurmaz.github.io/css_search-filter_components/screen.JPG)
 
-[demo](https://example.com){target="_blank"}
+
 
 
