@@ -3,9 +3,9 @@
 
 HTML ve CSS kullanarak _Search-Filter_ geliştirme
 
-Uygulamayı test etmek için [tıklayın](https://mustafadurmaz.github.io/css_search-filter_components"target="_blank)
+[Live Demo](https://mustafadurmaz.github.io/projects/css/search-filter_compenents/)
 
-![Uygulama görseli](https://mustafadurmaz.github.io/css_search-filter_components/screen.JPG)
+![Uygulama görseli](https://mustafadurmaz.github.io/projects/css/search-filter_compenents/screen.jpg)
 
 
 
