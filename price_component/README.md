@@ -1,7 +1,7 @@
 # Price Component
 ## Projenin Amacı
 
-HTML ve CSS kullanarak ücretlendirme compeneti oluşturma
+HTML ve CSS kullanarak ücretlendirme compenenti oluşturma
 
 Kazanımlar:
 - Label for ile checkbox'ı işaretleme 
