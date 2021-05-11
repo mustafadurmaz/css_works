@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+.cookie-banner{
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -12px rgba(0, 29, 147, .15);
+    --color1:#10182f;
+    --color2:#fff;
+    --color3:#306bf3;
+    background-color: var(--color2);
+    
+}
+
+
+
+.cookie-banner.dark{
+    --color1:#fff;
+    --color2:#10182f;
+    --color3:#fff;
+    
+}
+
+
+.cookie-banner p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--color1);
+}
+
+.cookie-banner p a{
+    display: block;
+    text-decoration: underline;
+    color: var(--color1);
+}
+
+.cookie-banner.style1{
+    width: 410px;
+    height: 196px;
+    padding: 35px 35px 25px;
+    
+    
+}
+
+.cookie-banner.style1.dark{
+    --color1:#fff;
+    --color2:#10182f;
+    
+}
+
+
+.cookie-banner.style1 .actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.cookie-banner.style1 .actions a{
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 132px;
+    color: var(--color1);
+}
+
+.cookie-banner.style1 .actions a.btn{
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+/*Cookie-banner style2*/
+
+.cookie-banner.style2{
+    width: 410px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 39px 40px 35px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.cookie-banner.style2 .icon{
+    text-align: center;
+    margin-bottom: 25px;
+    fill:var(--color3);
+}
+
+.cookie-banner.style2 p{
+    text-align: center;
+}
+
+.cookie-banner .actions {
+    text-align: center;
+}
+
+.cookie-banner .actions a{
+    width: 110px;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--color1);
+    color: var(--color2);
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cookie-banner.style2.horizontal{
+    flex-direction: row;
+    width: 731px;
+    height: 145px;
+    align-items: center;
+    justify-content: normal;
+    padding: 0 35px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.cookie-banner.style2.horizontal p{
+    text-align: left;
+    max-width: 330px;
+}
+
+.cookie-banner.style2.horizontal .icon{
+    margin-left: 5px;
+    margin-right: 45px;
+    text-align: center;
+}
+
+.cookie-banner.style2.horizontal .actions{
+    margin-left: auto;
+}
