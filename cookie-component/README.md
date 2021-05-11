@@ -1,4 +1,4 @@
-# Exchange Rate Calculator
+# Cookie Component
 ## Projenin Amacı
 
 HTML ve CSS kullanarak Cookie componenti oluşturma
