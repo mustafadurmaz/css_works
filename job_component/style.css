@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+*:focus{
+    outline: 0;
+}
+
+body{
+    background-color: #e7eafb;
+    padding: 50px;
+}
+
+.job-item{
+    
+    background-color: #fff;
+    box-shadow: 0 21px 87px -35px rgba(80, 98, 211, .5);
+    border-radius: 20px;
+    padding: 50px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 610px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+
+.job-item .title{
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #111127;
+    font-weight: bold;
+}
+
+.job-item .title a{
+    color:#111127;
+}
+
+.job-item .position{
+    color: rgba(17, 17, 39, .7);
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.job-item p{
+    font-size: 18px;
+    color: #111127;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.job-item .tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-item .tags a{
+    padding: 7px 20px;
+    background-color: #e7eafb;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #111127;
+    margin: 0 10px 10px 0;
+}
+
+/*-----------*/
+
+.job-item-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.job-item-list li{
+    margin-bottom: 15px;
+}
+
+.job-item-list li a{
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #E7EAFB;
+    border-radius: 10px;
+    padding: 20px 45px 20px 20px;
+    align-items: center;
+    transition: 300ms transform;
+}
+
+.job-item-list li a:hover{
+    transform: scale(1.03);
+}
+
+.job-item-list li a .avatar{
+    min-width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    border: 2px solid #E7EAFB;
+    margin-right: 15px;
+    color: var(--color);
+}
+
+.job-item-list li a .detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.job-item-list li a .detail .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: #111127;
+    margin-bottom: 9px;
+}
+
+.job-item-list li a .detail .position{
+    font-size: 16px;
+    color: #111127;
+    opacity: .7;
+}
+
+.job-item-list li a .location{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #111127;
+    opacity: .6;
+}
+
+.job-item-list li a .location img{
+    margin-right: 10px;
+}
+
+.job-filter{
+    width: 300px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.job-filter form .search{
+    height: 76px;
+    border-bottom: 1px solid #E7EAFB;
+    margin: 0 -30px;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.job-filter form .search input{
+    height: 46px;
+    line-height: 106px;
+    background: transparent url('./img/icon-search.svg') no-repeat 8px;
+    font-size: 16px;
+    color: #111127;
+    padding-left: 45px;
+
+}
+
+.job-filter form .search input::placeholder{
+    color: #111127;
+    opacity: .7;
+}
+
+.job-filter form h6{
+    font-size: 12px;
+    font-weight: bold;
+    color: #111127;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.job-filter form .checkbox-list{
+    padding-top: 10px;
+}
+
+.job-filter form .checkbox-list li{
+    margin-bottom: 20px;
+}
+
+.job-filter form .checkbox-list li:last-child{
+    margin-bottom: 0;
+}
+
+.job-filter form .checkbox-list li label{
+    display: flex;
+    cursor: pointer;
+}
+
+.job-filter form .checkbox-list li label .checkbox{
+    width: 27px;
+    height: 27px;
+    border: 1px solid #e7eafb;
+    border-radius: 5px;
+    background-color: #fff;
+    min-width: 27px;
+    transition: 300ms background;
+    margin-right: 15px;
+}
+
+.job-filter form .checkbox-list li label input{
+    display: none;
+}
+
+.job-filter form .checkbox-list li label .text{
+    font-size: 16px;
+    color: #111127;
+}
+
+.job-filter form .checkbox-list li label input:checked + .checkbox{
+    background: #8a9cff url('./img/icon-check.svg') no-repeat center;
+}
+
+.filter-form li{
+    margin-bottom: 20px;
+}
+
+.filter-form li:last-child{
+    margin-bottom: 20px;
+}
+
+.filter-form li label{
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #111127;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.filter-form li select{
+    appearance: none;
+    height: 46px;
+    border: 2px solid #e7eafb;
+    border-radius: 8px;
+    width: 100%;
+    padding: 0 40px 0 20px;
+    cursor: pointer;
+    background: #fff url('./img/icon-down-arrow.svg') no-repeat calc(100% - 15px);
+}
+
+.filter-form li select:focus{
+    border-color: #8a9cff;
+}
+
+.filter-form li button{
+    background-color: #8a9cff;
+    width: 100%;
+    height: 57px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 11px 30px -15px #6778E1;
+    transition: 300ms background-color;
+
+}
+
+.filter-form li button:hover{
+    background-color:#394dcf ;
+}
+
+.job-button{
+    display: inline-flex;
+    align-items: center;
+    height: 71px;
+    background-color: #fff;
+    padding: 0 35px 0 45px;
+    font-size: 18px;
+    color: #111127;
+    border-radius: 10px;
+    box-shadow: 0 11px 30px -15px 0;
+    transition: 300ms transform;
+    margin-left: 15px;
+}
+
+.job-button img{
+    margin-left: 25px;
+}
+
+.job-button:hover{
+    transform: scale(1.03);
+    color: #5062d3;
+}
+
+.twojob{
+    display: flex;
+    align-items: center;
+    
+}
+
+

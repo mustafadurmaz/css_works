@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+
+    <ul class="job-item-list">
+        <li>
+            <a href="#">
+                <span class="avatar" style="--color:#8A9CFF;">
+                    R
+                </span>
+                <span class="detail">
+                    <span class="title">Root</span>
+                    <span class="position">Lead Designer</span>
+                </span>
+                <span class="location">
+                    <img src="./img/icon-location.svg" alt="">
+                    Anywhere
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="avatar" style="color: #FF6DA1;">
+                    M
+                </span>
+                <span class="detail">
+                    <span class="title">Mustafa</span>
+                    <span class="position">Front-end Developer</span>
+                </span>
+                <span class="location">
+                    <img src="./img/icon-location.svg" alt="">
+                    Ankara,TR
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="avatar" style="color: #ff8a8a;">
+                    B
+                </span>
+                <span class="detail">
+                    <span class="title">Boulevard</span>
+                    <span class="position">Senior Experince Designer</span>
+                </span>
+                <span class="location">
+                    <img src="./img/icon-location.svg" alt="">
+                    Anywhere
+                </span>
+            </a>
+        </li>
+    </ul>
+
+    <div class="twojob">
+        <div class="job-filter">
+            <form action="">
+                <div class="search">
+                    <input type="text" placeholder="Search by keyword">
+                </div>
+                <h6>JOB TYPES</h6>
+                <ul class="checkbox-list">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span class="checkbox"></span>
+                            <span class="text">All</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span class="checkbox"></span>
+                            <span class="text">Full time</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" checked>
+                            <span class="checkbox"></span>
+                            <span class="text">Freelance</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <span class="checkbox"></span>
+                            <span class="text">Internship</span>
+                        </label>
+                    </li>
+                </ul>
+                <h6>LOCATİON</h6>
+                <ul class="filter-form">
+                    <li>
+                        <label for="country">Country/Region</label>
+                        <select name="" id="country">
+                            <option value="">Turkey</option>
+                            <option value="">Germany</option>
+                            <option value="">Sweden</option>
+                            <option value="">France</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="city">City</label>
+                        <select name="" id="city">
+                            <option value="">Ankara</option>
+                            <option value="">Berlin</option>
+                            <option value="">Paris</option>
+                            <option value="">Oslo</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button type="submit">Apply</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="job-item">
+        
+            <h3 class="title"><a href="#"> Product Designer (UI/UX)</a></h3>
+            <div class="position">Product Designer (UI/UX)</div>
+            <p>
+                We are looking for a ui/ux web designer to redesign our website which is a subscription snack box company.
+            </p>
+            <div class="tags">
+                <a href="#">UI Design</a>
+                <a href="#">UX Design</a>
+                <a href="#">Prototyping</a>
+            </div>
+            
+        </div>
+
+        <div class="button">
+            <a href="#" class="job-button">
+                See all jobs
+                <img src="./img/icon-right-arrow.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
