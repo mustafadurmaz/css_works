@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+*:focus{
+    outline: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: #f7f8fc;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    margin-top: auto;
+    padding: 75px;
+    border-top: 5px solid #10182f;
+    background-color: #fff;
+}
+
+.footer-top{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-top .logo{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 50px;
+    color: #10182f;
+
+}
+
+.footer-top .footer-menu{
+    margin-left: auto;
+    display: flex;
+}
+
+.footer-top .footer-menu nav{
+    min-width: 180px;
+    margin-right: 40px;
+}
+
+.footer-top .footer-menu nav h5{
+    font-size: 14px;
+    font-weight: bold;
+    color: #222c46;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.footer-top .footer-menu nav ul li a{
+    display: inline-block;
+    font-size: 16px;
+    color: #545d7a;
+    padding: 10px 0;
+    position: relative;
+}
+
+.footer-top .footer-menu nav ul li a::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #545d7a;
+    width: 0;
+    transition: 300ms width;
+}
+
+.footer-top .footer-menu nav ul li a:hover{
+    color: #222c46;
+}
+
+.footer-top .footer-menu nav ul li a:hover::before{
+    width: 100%;
+}
+
+.footer .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+    align-items: center;
+}
+
+.footer .footer-bottom p{
+    font-size: 14px;
+    color: #545d7a;
+}
+
+.footer .footer-bottom .footer-menu ul{
+    display: flex;
+}
+
+.footer .footer-bottom .footer-menu ul li{
+    margin: 0 25px;
+}
+
+.footer .footer-bottom .footer-menu ul li a{
+    display: block;
+    font-size: 14px;
+    color: #545d7a;
+}
+
+.footer .footer-bottom .footer-social{
+    display: flex;
+}
+
+.footer .footer-bottom .footer-social li a{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.footer .footer-bottom .footer-social li a img{
+    opacity: .5;
+    transition: 300ms opacity;
+}
+
+.footer .footer-bottom .footer-social li a img:hover{
+    opacity: 1;
+}
