@@ -14,6 +14,15 @@
     outline: 0;
 }
 
+.components{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+}
+
 body{
     background: #161e29;
     padding: 50px;
@@ -146,12 +155,12 @@ body{
 
 .component-skills ul{
     display: flex;
-    margin: 0 -5px;
+    margin: -5px;
     flex-wrap: wrap;
 }
 
 .component-skills ul li{
-    margin: 0 5px;
+    margin: 5px;
 }
 
 .component-skills ul li a{
@@ -161,6 +170,7 @@ body{
     border-radius: 10px;
     font-size: 15px;
     color: #c9cedf;
+    box-shadow: 0 10px 20px -20px #081323;
 }
 
 
