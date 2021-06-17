@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+*:focus{
+    outline: 0;
+}
+
+body{
+    background-color: #f6f8fc;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.help-center h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #202842;
+    margin-bottom: 52px;
+    text-align: center;
+}
+
+.help-center .inner{
+    width: 558px;
+}
+
+.help-center form{
+    position: relative;
+    margin-bottom: 66px;
+}
+
+.help-center form .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68px;
+    height: 63px;
+    display: grid;
+    place-items: center;
+}
+
+.help-center form input{
+    background: #fff;
+    border-radius: 10px;
+    height: 63px;
+    width: 100%;
+    box-shadow: 0 9px 10px -4px rgba(201, 214, 239, .46);
+    color: #202842;
+    padding: 0 20px 0 68px;
+}
+
+.help-center form input::placeholder{
+    color: #828d97;
+}
+
+.dropdown-container{
+    margin-bottom: 70px;
+}
+
+.dropdown-container li{
+    margin-bottom: 25px;
+}
+
+.dropdown-container li:last-child{
+    margin-bottom: 0;
+}
+
+.dropdown-container li input{
+    display: none;
+}
+
+.dropdown-container li input:checked + label img{
+    transform: rotate(180deg);
+}
+
+.dropdown-container li input:checked + label + .dropdown-content{
+    max-height: 50vh;
+    padding: 15px 0;
+}
+
+.dropdown-container li label{
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 5px;
+    border-bottom: 2px solid #dee4f1;
+    font-size: 18px;
+    color: #202842;
+    cursor: pointer;
+    
+}
+
+.dropdown-container li .dropdown-content{
+    overflow: hidden;
+    max-height: 0;
+    transition: 500ms all;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #202842;
+    opacity: 0.6;
+}
+
+.help-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-center .help-articles{
+    width: 838px;
+}
+
+.help-center .help-articles ul{
+    display: flex;
+    margin: 0 calc(-35px / 2);
+}
+
+.help-center .help-articles ul li{
+    margin: 0 calc(35px / 2);
+}
+
+.help-center .help-articles ul li a{
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 9px 10px -4px rgba(201, 214, 239, .46);
+    background: #fff;
+    transition: 300ms all;
+}
+
+.help-center .help-articles ul li a img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: block;
+    height: 128px;
+    object-fit: cover;
+    
+}
+
+.help-center .help-articles ul li a img:hover{
+    transform: scale(1.04);
+}
+
+.help-center .help-articles ul li a .title{
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #202842;
+}
