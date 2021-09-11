@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*:focus{
+    outline: 0;
+}
+
+body{
+    background: #f0f1f2;
+}
+
+.component-feedback{
+    background-color: #fff;
+    padding: 30px 25px;
+    box-shadow: 0 24px 27px -15px rgba(#3457DC,.13);
+    position: fixed;
+}
+
+.component-feedback.position-bc{
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.component-feedback.position-bl{
+    bottom: 20px;
+    left: 20px;
+    transform: translateX(-50%)
+}
+
+.component-feedback.position-br{
+    bottom: 20px;
+    right: 20px;
+    transform: translateX(-50%)
+}
+
+.component-feedback.position-tc{
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.component-feedback.position-tl{
+    top: 20px;
+    left: 20px;
+    transform: translateX(-50%)
+}
+
+.component-feedback.position-tr{
+    top: 20px;
+    right: 20px;
+    transform: translateX(-50%)
+}
+
+.component-feedback.position-c{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.component-feedback .close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.component-feedback .labels{
+    display: flex;
+    justify-content: space-between;
+}
+
+.component-feedback .labels.labels-icon li{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.component-feedback .labels.labels-icon li input{
+    display: none;
+}
+
+.component-feedback .labels.labels-icon li.active{
+    background: #fff;
+    box-shadow: 0 5px 15px -5px rgba(#94A5E4, .7);
+}
+
+.component-feedback .labels.labels-numbers{
+    margin: 0 -4px;
+}
+
+.component-feedback .labels.labels-numbers li{
+    margin: 0 4px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dcdff1;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #202842;
+    cursor: pointer;
+}
+
+.component-feedback .labels.labels-numbers li.active{
+    background: #1a2b63;
+    border-color: #1a2b63;
+    color: #fff;
+    box-shadow: 0 5px 10px -5px;
+}
+
+.component-feedback .labels.labels-numbers li input{
+    display: none;
+}
+
+.component-feedback h6{
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #242842;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.component-feedback.style1{
+    width: 380px;
+    
+}
+
+.component-feedback .labels-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #5D698D;
+}
+
+.component-feedback .message{
+    height: 0;
+    overflow: hidden;
+    transition: 300ms height, 300ms padding-top;
+    
+}
+
+.component-feedback .message p{
+    font-size: 12px;
+    color: #202842;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.component-feedback .message textarea{
+    width: 100%;
+    border: 1px solid #dcdff1;
+    border-radius: 5px;
+    height: 70px;
+    padding: 10px;
+    font-size: 12px;
+    color: #202842;
+    resize: none;
+    overflow: auto;
+}
+
+.component-feedback .message textarea:focus{
+    border-color: #3457DC;
+    caret-color: #3457DC;
+}
+
+.component-feedback .message textarea::placeholder{
+    color: #5D698D;
+}
+
+.component-feedback .message.active{
+    height: 122px;
+    padding-top: 25px;
+}
+
+.component-feedback .actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.component-feedback .actions a{
+    font-size: 14px;
+    color: #5D698D;
+}
+
+.component-feedback .actions a:hover{
+    text-decoration: underline;
+}
+
+.component-feedback .actions button{
+    height: 40px;
+    background-color: #3457DC;
+    border-radius: 5px;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.component-feedback .actions button:hover{
+    background: darken(#3457DC, 5%);
+}
+
