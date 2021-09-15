@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Component</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="component-login">
+        <div class="login-card">
+            <header>
+                <h5>Welcome Back!</h5>
+                <p>Sign in to continue</p>
+            </header>
+            <div class="login-content">
+                <div class="avatar">
+                    <img src="./img/avatar.jpeg" alt="">
+                </div>
+                <form action="" method="post">
+                    <ul>
+                        <li>
+                            <label class="title" for="username">Username</label>
+                            <input type="text" id="username" placeholder="Enter username">
+                        </li>
+                        <li>
+                            <label class="title" for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter password">
+                        </li>
+                        <li class="checkbox">
+                            <input type="checkbox" name="remember_me" value="1" checked>
+                            <span class="checkbox"></span>
+                            <span class="text">Remember me</span>
+                        </li>
+                        <li>
+                            <button type="submit">Log in</button>
+                            <a href="#" class="forgot-password">
+                                <img src="./img/icon-lock.svg" alt="">
+                                Forgot your password
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="login-text">
+            <p>Don't have an account? <a href="#">Sign up now</a></p>
+            <p>&copy;2021 Designed by Durmaz</p>
+        </div>
+    </div>
+    
+    
+    <script src="./script.js"></script>
+</body>
+</html>
