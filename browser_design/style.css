@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*:focus{
+    outline: 0;
+}
+
+body{
+    height: 100vh;
+    padding: 25px;
+    
+}
+
+.browser{
+    width: 100%;
+    height: 784px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, .7), 0 20px 30px 0 rgba(0, 0, 0, .3),0 10px 50px 0 rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.browser .iframe{
+    flex: 1;
+}
+
+.browser .iframe iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.browser .bar{
+    height: 53px;
+    box-shadow: 0 -0.5px 0 0 rgba(0, 0, 0, .05) inset, 0 0.5px 0 0 rgba(0, 0, 0, .15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px 0 21px;
+    
+}
+
+.browser .bar .bar-actions{
+    display: flex;
+    align-items: center;
+}
+
+.browser .bar .bar-actions > a{
+    width: 33px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.browser .bar .bar-actions > a.margin-right{
+    margin-right: 9px;
+}
+
+.browser .bar .bar-actions > a.passive{
+    opacity: .5;
+}
+
+
+.browser .bar .bar-actions .buttons{
+    display: flex;
+    align-items: center;
+    margin-right: 11px;
+}
+
+.browser .bar .bar-actions .buttons span{
+    width: 12px;
+    height: 12px;
+    background: #ee6a5f;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 1px solid #ce5347;
+}
+
+.browser .bar .bar-actions .buttons span:nth-child(2){
+    background: #f5bf4f;
+    border-color: #d6a243;
+}
+
+.browser .bar .bar-actions .buttons span:nth-child(3){
+    background: #61c454;
+    border-color: #58a942;
+}
+
+.browser .bar .bar-actions.with-space > a{
+    margin-left: 8px;
+}
+
+.browser .bar .bar-url{
+    display: flex;
+    align-items: center;
+}
+
+.browser .bar .bar-url > a{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.browser .bar .bar-url .url{
+    width: 516px;
+    height: 28px;
+    background: rgba(0, 0, 0, .05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #4c4c4c;
+    position: relative;
+    overflow: hidden;
+}
+
+.browser .bar .bar-url .url svg{
+    margin-right: 6px;
+}
+
+.browser .bar .svg-icon{
+    fill: #737373;
+}
+
+.browser .bar .bar-url .url .refresh-btn{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
