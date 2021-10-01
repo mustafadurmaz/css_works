@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+*:focus{
+    outline: 0;
+}
+
+body{
+    background-color: #f6f8fc;
+    padding: 30px;
+    
+}
+
+.component.component-1{
+    background: #fff;
+    padding: 80px;
+    border-radius: 15px;
+    max-width: 950px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.component.component-1 >img{
+    margin-right: 40px;
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.component.component-1 .content-right{
+    height: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.component.component-1 .content-right h3{
+    font-size: 32px;
+}
+
+.component.component-1 .content-right .author{
+    font-size: 18px;
+    color: #1a1b38;
+}
+
+.component.component-1 .content-right .author a{
+    color: #5b60ed;
+    text-decoration: underline;
+}
+
+.component.component-1 .content-right .actions{
+    display: flex;
+    margin: 0 -7px;
+}
+
+.component.component-1 .content-right .actions a{
+    height: 63px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d4dbee;
+    border-radius: 3px;
+    justify-content: center;
+    margin: 0 7px;
+    font-size: 18px;
+    color: #585971;
+    padding: 0 30px;
+    white-space: nowrap;
+}
+
+.component.component-1 .content-right .actions a:hover{
+    border-color: #5b60ed;
+    color: #5b60ed;
+}
+
+.component.component-1 .content-right .actions a img{
+    margin-right: 10px;
+}
+
+.divider{
+    height: 50px;
+}
+
+.component.component-2{
+    background: #fff;
+    padding: 50px 60px 60px 60px;
+    border-radius: 15px;
+    max-width: 390px;
+}
+
+.component.component-2 h3{
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+
+.component.component-2 ul li{
+    padding-bottom: 15px;
+}
+
+.component.component-2 ul li.button{
+    padding-top: 35px;
+}
+
+button[type="submit"]{
+    height: 63px;
+    border-radius: 3px;
+    background: #5b60ed;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+.component.component-2 ul li:last-child{
+    padding-bottom: 0;
+}
+
+.component.component-2 ul li .radio{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    ;
+}
+
+.component.component-2 ul li .radio:hover .cb{
+    border-color: #5b60ed;
+    
+}
+
+.component.component-2 ul li .radio .cb::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #5b60ed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+
+}
+
+.component.component-2 ul li .radio .cb{
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    border: 1px solid #d4dbee;
+    position: relative
+}
+
+.component.component-2 ul li input{
+    display: none;
+}
+
+.component.component-2 ul li input:checked + .cb{
+    border-color: #5b60ed;
+}
+
+.component.component-2 ul li input:checked + .cb::before{
+    display: block;
+}
+
+.component.component-3{
+    background: #fff;
+    padding: 55px 60px 65px 60px;
+    border-radius: 15px;
+    max-width: 510px;
+}
+
+.component.component-3 h3{
+    font-size: 24px;
+    padding-bottom: 25px;
+}
+
+.component.component-3 .keywords{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.component.component-3 .keywords a{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 3px;
+    border: 1px solid #d4dbee;
+    color: #585971;
+    font-size: 14px;
+}
+
+.component.component-3 .keywords a:hover{
+    color: #5b60ed;
+    border-color: #5b60ed;
+}
+
+.component.component-3 .keywords a.view-all{
+    background: #f3f6fd;
+    border-color: #f3f6fd;
+    color: #5860ed;
+}
+
+.component.component-3 .keywords a.view-all img{
+    margin-left: 5px;
+}
+
+.component.component-3 .stock-details{
+    margin-top: 40px;
+    padding-top: 50px;
+    display: flex;
+    border-top: 1px solid #d4dbee;
+}
+
+.component.component-3 .stock-details li{
+    flex: 1;
+    font-size: 16px;
+    color: #585971;
+    
+}
+
+.component.component-3 .stock-details li label{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}

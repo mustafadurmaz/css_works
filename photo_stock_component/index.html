@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Photo Stock Component</title>
+</head>
+<body>
+    
+    <article class="component component-1">
+        <img src="./img/sample-image.png" alt="">
+        <div class="content-right">
+            <h3>Vector illustration set of rocks and stones</h3>
+            <div class="author">
+                by <a href="#">Mustafa Durmaz</a>
+            </div>
+            <div class="actions">
+                <a href="#">
+                    <img src="./img/icon-download.svg" alt="">
+                    Download
+                </a>
+                <a href="#">
+                    <img src="./img/icon-folder.svg" alt="">
+                    Save to Collection
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <div class="divider"></div>
+
+    <aside class="component component-2">
+        <h3>Image Size</h3>
+        <ul>
+            <li>
+                <label class="radio">
+                    <input type="radio" name="size" value="1">
+                    <span class="cb"></span>
+                    <span class="text">Original 3264X4922</span>
+                </label>
+            </li>
+            <li>
+                <label class="radio">
+                    <input type="radio" name="size" value="2">
+                    <span class="cb"></span>
+                    <span class="text">Large 3264 X 4922</span>
+                </label>
+            </li>
+            <li>
+                <label class="radio">
+                    <input type="radio" name="size" value="3" checked>
+                    <span class="cb"></span>
+                    <span class="text">Medium 1280 X 1932</span>
+                </label>
+            </li>
+            <li>
+                <label class="radio">
+                    <input type="radio" name="size" value="4">
+                    <span class="cb"></span>
+                    <span class="text">Small 640 X 966</span>
+                </label>
+            </li>
+            <li>
+                <label class="radio">
+                    <input type="radio" name="size" value="5">
+                    <span class="cb"></span>
+                    <span class="text">Custom Size 3264X4922</span>
+                </label>
+            </li>
+            <li class="button">
+                <button type="submit">Download</button>
+            </li>
+        </ul>
+    </aside>
+
+    <div class="divider"></div>
+
+    <div class="component component-3">
+        <h3>Similar Keywords</h3>
+        <div class="keywords">
+            <a href="#">Rock</a>
+            <a href="#">Stone</a>
+            <a href="#">illustration</a>
+            <a href="#">cartoon</a>
+            <a href="#">geography</a>
+            <a href="#" class="view-all">view all
+                <img src="./img/icon-arrow-right.svg" alt="">
+            </a>
+        </div>
+        <ul class="stock-details">
+            <li>
+                <label>Category</label>
+                Vector illustrations
+            </li>
+            <li>
+                <label>License Type</label>
+                Standard for Extended
+            </li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>
